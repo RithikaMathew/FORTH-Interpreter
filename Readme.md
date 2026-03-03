@@ -141,3 +141,11 @@ Then create the zip archive:
 ```
 zip -r FORTH.zip FORTH/
 ```
+## Development Notes/ Challenges
+
+- Had to install QuickCheck and hspec outside the project directory 
+  using `cabal install --lib` due to cabal project conflicts
+- GHC installation was initially broken and required a manual 
+  reinstall via ghcup
+- The containers package needed to be explicitly passed when running 
+  InterpretSpec.hs with runhaskell
